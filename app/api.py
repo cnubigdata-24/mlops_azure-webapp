@@ -13,11 +13,7 @@ model = load(ROOT_DIR / "artifacts/model.joblib")
 
 @app.get("/")
 def root():
-<<<<<<< HEAD
     return "Wine Quality Ratings Machine Learning 2025-03-31 new !!!"
-=======
-    return "Wine Quality Ratings Machine Learning 2025 Original !!!"
->>>>>>> 8bb6d0b (Delete .github/workflows directory)
 
 @app.post("/predict", response_model=Rating)
 def predict(response: Response, sample: Wine):

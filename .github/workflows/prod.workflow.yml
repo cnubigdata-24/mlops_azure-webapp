@@ -33,6 +33,6 @@ jobs:
       - name: Deploy to App Service
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'mlops-webapp'
+          app-name: 'mlops-appservice-2025'
           images: 'acrmlops2025.azurecr.io/mlops-webapp:${{ github.sha }}'
           slot-name: 'staging'

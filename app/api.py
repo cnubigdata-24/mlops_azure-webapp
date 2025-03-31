@@ -13,7 +13,7 @@ model = load(ROOT_DIR / "artifacts/model.joblib")
 
 @app.get("/")
 def root():
-    return "Wine Quality Ratings Machine Learning 2025-03-31 new !!!"
+    return "Wine Quality Ratings Machine Learning 2025-03-31 new !!!!"
 
 @app.post("/predict", response_model=Rating)
 def predict(response: Response, sample: Wine):
